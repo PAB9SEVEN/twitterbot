@@ -1,0 +1,15 @@
+
+<form method="POST" action="other">
+ <div class="form-group">
+    <label for="name">name</label>
+    <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+  </div>
+     
+    <div class="form-group">
+  <button type="submit" class="btn btn-primary">Submit</button></div>
+</form>
+
+
+{{#each followers}}
+<div class="jumbotron">{{this}}</div>
+{{/each}}

@@ -1,0 +1,78 @@
+{{#each tweets}}
+<ul class="list-group"><li class="list-group-item">{{this}}
+    </li></ul>
+
+{{/each}}
+
+<form method="POST" action="users/update" class="pad">
+ <div class="form-group">
+    <label for="Tweet">Tweet</label>
+    <input type="text" class="form-control" id="tweet" placeholder="Enter the tweet" name="tweet">
+  </div>
+    <div class="form-group">
+  <button type="submit" class="btn btn-primary">Submit</button></div>
+</form>
+
+
+
+
+<br>
+<br><br>
+
+
+<form method="POST" action="users/show">
+ <div class="form-group">
+    <label for="Search">Search</label>
+    <input type="text" class="form-control" id="search" placeholder="Enter the query" name="query">
+  </div>
+    <div class="form-group">
+  <button type="submit" class="btn btn-primary">Submit</button></div>
+</form>
+
+<br><br>
+<form method="POST" action="users/create">
+ <div class="form-group">
+    <label for="screenname">Screen name</label>
+    <input type="text" class="form-control" id="screenname" placeholder="Enter the username" name="friend">
+  </div>
+    <div class="form-group">
+    <label for="message">Message</label>
+    <input type="text" class="form-control" id="screenname" placeholder="Enter the message" name="msg">
+  </div>
+    <div class="form-group">
+  <button type="submit" class="btn btn-primary">Submit</button></div>
+</form>
+
+<form method="POST" action="users/createfriends">
+ <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" id="username" placeholder="Enter the username" name="username">
+  </div>
+    <div class="form-group">
+  <button type="submit" class="btn btn-primary">Submit</button></div>
+</form>
+<form method="POST" action="users/destroy">
+ <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" id="username" placeholder="Enter the username to be unfriend" name="username">
+  </div>
+    <div class="form-group">
+  <button type="submit" class="btn btn-primary">Submit</button></div>
+</form>
+
+
+
+<form method="POST" action="users/reply">
+ <div class="form-group">
+    <label for="id">Tweet-id</label>
+    <input type="text" class="form-control" id="id" placeholder="Enter the id" name="id">
+  </div>
+    <div class="form-group">
+  <button type="submit" class="btn btn-primary">Submit</button></div>
+</form>
+
+
+
+
+
+

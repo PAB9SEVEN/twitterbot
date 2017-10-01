@@ -1,0 +1,54 @@
+<form method="POST" action="reply">
+ <div class="form-group">
+    <label for="id">Tweet-id</label>
+    <input type="text" class="form-control" id="id" placeholder="Enter the id" name="id">
+  </div>
+     <div class="form-group">
+    <label for="reply">Your Reply</label>
+    <input type="text" class="form-control" id="reply" placeholder="Enter the msg" name="reply">
+  </div>
+    <div class="form-group">
+  <button type="submit" class="btn btn-primary">Submit</button></div>
+</form>
+<br>
+<form method="POST" action="favourite">
+ <div class="form-group">
+    <label for="id">Tweet-id</label>
+    <input type="text" class="form-control" id="id" placeholder="Enter the favourite" name="id">
+  </div>
+     
+    <div class="form-group">
+  <button type="submit" class="btn btn-primary">Submit</button></div>
+</form>
+<br>
+<form method="POST" action="unfavourite">
+ <div class="form-group">
+    <label for="id">Tweet-id</label>
+    <input type="text" class="form-control" id="id" placeholder="Enter the unfavourite" name="id">
+  </div>
+     
+    <div class="form-group">
+  <button type="submit" class="btn btn-primary">Submit</button></div>
+</form>
+<br>
+<br>
+<form method="POST" action="delete">
+ <div class="form-group">
+    <label for="id">Tweet-id</label>
+    <input type="text" class="form-control" id="id" placeholder="Delete" name="id">
+  </div>
+     
+    <div class="form-group">
+  <button type="submit" class="btn btn-primary">Submit</button></div>
+</form>
+
+
+
+{{#each latest_tweets}}
+<ul>
+<li>{{this.text}}<br>
+    
+{{this.id}}
+    </li>
+</ul>
+{{/each}}
