@@ -5,6 +5,7 @@ var bodyParser=require('body-parser');
 var cookieParser=require('cookie-parser');
 var app=express();
 var port=9000;
+//var port=9000;
 var index=require('./routes/index');
 var users=require('./routes/users');
 //static folder
@@ -22,9 +23,15 @@ app.use('/static', express.static(__dirname + '/public'));
 app.use('/',index);
 app.use('/users',users);
 
-
+/*
 app.listen(port,function(){
     
     console.log("the server has started on " +port);
     
+});
+
+*/
+app.listen(process.env.PORT || port,process.env.IP,function()
+          {
+    console.log("yeah it has started..!");
 });
